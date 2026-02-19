@@ -6,27 +6,86 @@
   <title>Kai Yang</title>
   <meta name="description" content="Kai Yang — decision-first notes on AI tools, crypto, and global fintech." />
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;max-width:820px;margin:64px auto;padding:0 20px;line-height:1.6}
-    .tag{display:inline-block;padding:6px 10px;border:1px solid #ddd;border-radius:999px;margin-right:8px;font-size:14px}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      max-width:820px;
+      margin:64px auto;
+      padding:0 20px;
+      line-height:1.6;
+    }
+    nav{
+      margin-bottom:40px;
+      font-size:14px;
+    }
+    nav a{
+      margin-right:18px;
+      text-decoration:none;
+    }
+    nav a:hover{
+      text-decoration:underline;
+    }
+    .tag{
+      display:inline-block;
+      padding:6px 10px;
+      border:1px solid #ddd;
+      border-radius:999px;
+      margin-right:8px;
+      font-size:14px;
+    }
+    footer{
+      margin-top:60px;
+      font-size:14px;
+      opacity:.6;
+    }
     a{color:inherit}
   </style>
 </head>
 <body>
-  <h1>Kai Yang</h1>
-  <p>Decision-first notes on <strong>AI tools</strong>, <strong>crypto</strong>, and <strong>global fintech</strong>.</p>
 
-  <p>
-    <span class="tag">AI</span>
-    <span class="tag">Crypto</span>
-    <span class="tag">CPS</span>
-  </p>
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about/">About</a>
+      <a href="/writing/">Writing</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+  </header>
 
-  <p>Contact: <a href="mailto:hi@kaiyang.ai">hi@kaiyang.ai</a></p>
+  <!-- MAIN -->
+  <main>
+    <h1>Kai Yang</h1>
 
-  <p style="margin-top:36px;font-size:14px;opacity:.75">
-    © <span id="y"></span> Kai Yang 
-  </p>
-  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+    <p>
+      Decision-first notes on <strong>AI tools</strong>,
+      <strong>crypto custody</strong>,
+      and <strong>global fintech infrastructure</strong>.
+    </p>
+
+    <p>
+      <span class="tag">AI</span>
+      <span class="tag">Crypto</span>
+      <span class="tag">CPS</span>
+    </p>
+
+    <p>
+      Read the latest essays in <a href="/writing/">Writing</a>.
+    </p>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>
+      Contact: <a href="mailto:hi@kaiyang.ai">hi@kaiyang.ai</a>
+    </p>
+    <p>
+      © <span id="y"></span> Kai Yang · Based in Toronto
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent=new Date().getFullYear()
+  </script>
+
 </body>
 </html>
-
